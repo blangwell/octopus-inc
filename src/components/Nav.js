@@ -7,11 +7,11 @@ import '../css/Nav.css';
 const BootstrapNav = props => {
   return (
     <div>
-    <Navbar expand="md">
+    <Navbar collapseOnSelect expand="md">
       <Navbar.Brand href="/"><Logo className="octopus-logo"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <LinkContainer exact={true} to="/">
+        <LinkContainer exact to="/">
           <Nav.Link>Home</Nav.Link>
         </LinkContainer>
         <LinkContainer to="/about">
