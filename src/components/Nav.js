@@ -1,17 +1,26 @@
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { LinkContainer } from 'react-router-bootstrap';
+import { ReactComponent as Logo } from '../img/bar-chart.svg';
 import '../css/Nav.css';
-import swirl from '../img/swirl.png';
 
-const Nav = props => {
+const BootstrapNav = props => {
   return (
     <div>
-      <nav className="navbar">
-        <a href="/"><img src={swirl} alt="logo" className="logo"/></a>
-        <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>
-        <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
-      </nav>
+    <Navbar expand="md">
+      <Navbar.Brand href="/"><Logo className="octopus-logo"/></Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <LinkContainer exact={true} to="/">
+          <Nav.Link>Home</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/about">
+          <Nav.Link>About</Nav.Link>
+        </LinkContainer>
+      </Navbar.Collapse>
+    </Navbar>
     </div>
   )
 }
 
-export default Nav;
+export default BootstrapNav;

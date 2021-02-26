@@ -1,10 +1,10 @@
-import octopusLogo from '../img/octopusLogo.png';
+import stocks from '../img/stocks-stock.jpg';
+import '../css/Home.css';
 
 const Home = props => {
   return (
-    <div>
-      <h1>Octopus Inc</h1>
-      <img src={octopusLogo} alt="logo"/>
+    <div class="banner-container">
+      <h1 class="banner-title">Home</h1>
     </div>
   )
 }
