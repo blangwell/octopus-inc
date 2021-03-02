@@ -31,13 +31,11 @@ const Home = props => {
         }
         `}
       </style>
-      <div class="banner-text">
-        <h1 class="banner-title">Octopus Incorporated</h1>
+      <div class="container-sm banner-text">
+        <h1 class="display-4">Octopus Incorporated</h1>
         <h2>Leverage Analytics. Mobilize Your Niche.</h2> 
         <Button variant="banner">Bootscrap Button</Button>
-        <Button variant="banner">Bootcrap Button</Button>
-        {/* <button class="banner-button">Request Consultation</button>
-        <button class="banner-button">Discovery Schemas</button> */}
+        <Button variant="banner">Boontsprap Button</Button>
       </div>
     </div>
   )

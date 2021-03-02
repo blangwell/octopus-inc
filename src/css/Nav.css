@@ -8,31 +8,31 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--dark-blue);
+  background-color: white;
   padding: .5rem;
 }
 
 .nav-link {
   padding: .5rem;
-  color: white;
+  color: var(--dark-blue);
   text-decoration: none;
 }
 
 .nav-link:hover {
   background-color: var(--light-blue);
   border-radius: 1rem;
-  color: var(--dark-blue);
+  color: white;
 }
 
 .active {
-  color: var(--light-blue);
+  color: var(--dark-blue);
 }
 
 .octopus-logo {
   width: 30px;
   height: 30px;
-  fill: #dfe3ee;
+  fill: var(--dark-blue);
 }
 .octopus-logo:hover {
-  fill: white;
+  fill: var(--light-blue);
 }
