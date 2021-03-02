@@ -11,12 +11,12 @@ const BootstrapNav = props => {
       <Navbar.Brand href="/"><Logo className="octopus-logo"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <LinkContainer exact to="/">
-          <Nav.Link>Home</Nav.Link>
-        </LinkContainer>
-        <LinkContainer to="/about">
-          <Nav.Link>About</Nav.Link>
-        </LinkContainer>
+          <LinkContainer exact to="/">
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/about">
+            <Nav.Link>About</Nav.Link>
+          </LinkContainer>
       </Navbar.Collapse>
     </Navbar>
     </div>
